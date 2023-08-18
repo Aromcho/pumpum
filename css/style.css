@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Kanit:wght@200&display=swap') ;
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image:url(../img/HeroGastronomiaReposteriaPasteleria.jpg) ;
+    background-size: cover;
+
+}
+
+
+
+
+section {
+
+    height: 20%;
+
+}
+.titulo {
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(224, 200, 178);
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    -webkit-text-stroke: 1px rgb(58, 39, 22);
+    font-weight:bolder;
+    -webkit-animation:focus-in-contract .7s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-contract .7s cubic-bezier(.25,.46,.45,.94) both
+
+}
+main {
+
+}
+
+
+.cajita {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "c1 c2 c3"
+    "c4 c5 c6"
+    "c7 c8 c9";
+}
+.card {
+    -webkit-animation:roll-in-blurred-left .65s cubic-bezier(.23,1.000,.32,1.000) both;animation:roll-in-blurred-left .65s  cubic-bezier(.23,1.000,.32,1.000) both;
+    margin: 10px;
+    width: 400px;
+}
+.card-img-top { 
+    border-radius: 30px 30px 0 0;
+
+
+}
+.card1 {
+    background-color: rgba(197, 192, 192, 0.726);
+    animation-delay: .5s;
+    grid-area: c1;
+    border-radius: 30px;
+
+}
+.card2 {
+    background-color: rgba(197, 192, 192, 0.726);
+    animation-delay: 1s;
+    grid-area: c2;
+    border-radius: 30px;
+
+}
+.card3 {
+    background-color: rgba(197, 192, 192, 0.726);
+    animation-delay: 1.5s;
+    grid-area: c3;
+    border-radius: 30px;
+
+}
+.sucursales {
+    padding: 20px;
+    grid-area: c5;
+}
+/* sucursales*/
+.sucu {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "s1 s2";
+
+}
+.map {
+    background-color: rgba(197, 192, 192, 0.726);
+    margin: 20px;
+    border-radius: 30px;
+}
+.mapp{
+    margin: 50px;
+    grid-area: s2;
+
+    width:500px;
+
+}
+.tima h1{
+    padding: 20%;
+    text-align: center;
+    color: rgb(224, 200, 178);
+    font-family: 'Dancing Script', cursive;
+    -webkit-text-stroke: 1px rgb(58, 39, 22);
+    font-size: 70px;
+    font-weight:bolder;
+    grid-area: s1;
+
+    
+}
+.accordion {
+    padding: 20px;
+    border-radius: 30px;
+    
+}
+/* delyvery*/ 
+.dely { 
+
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 50% 20%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    "f1 f2 f3"
+    "f4 f5 f6"
+    "f7 f8 f9";    
+
+
+}
+.fm {
+    height: 70vh;
+    grid-area: f5;
+    background-color: rgba(197, 192, 192, 0.726);
+    padding: 20px;
+
+    
+
+}
+@media (max-width:780px){
+    .cajita {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 80%;
+    }
+
+}
+@keyframes text-flicker-in-glow{0%{opacity:0}10%{opacity:0;text-shadow:none}10.1%{opacity:1;text-shadow:none}10.2%{opacity:0;text-shadow:none}20%{opacity:0;text-shadow:none}20.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.25)}20.6%{opacity:0;text-shadow:none}30%{opacity:0;text-shadow:none}30.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.5%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.6%{opacity:0;text-shadow:none}45%{opacity:0;text-shadow:none}45.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}50%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55.1%{opacity:0;text-shadow:none}57%{opacity:0;text-shadow:none}57.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60.1%{opacity:0;text-shadow:none}65%{opacity:0;text-shadow:none}65.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75.1%{opacity:0;text-shadow:none}77%{opacity:0;text-shadow:none}77.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85.1%{opacity:0;text-shadow:none}86%{opacity:0;text-shadow:none}86.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}100%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}}
+@-webkit-keyframes focus-in-contract{0%{letter-spacing:1em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-contract{0%{letter-spacing:1em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@keyframes kenburns-top{0%{transform:scale(1) translateY(0);transform-origin:50% 16%}100%{transform:scale(1.25) translateY(-15px);transform-origin:top}}
+
+ @-webkit-keyframes kenburns-bottom-right{0%{-webkit-transform:scale(1) translate(0,0);transform:scale(1) translate(0,0);-webkit-transform-origin:84% 84%;transform-origin:84% 84%}100%{-webkit-transform:scale(1.25) translate(20px,15px);transform:scale(1.25) translate(20px,15px);-webkit-transform-origin:right bottom;transform-origin:right bottom}}@keyframes kenburns-bottom-right{0%{-webkit-transform:scale(1) translate(0,0);transform:scale(1) translate(0,0);-webkit-transform-origin:84% 84%;transform-origin:84% 84%}100%{-webkit-transform:scale(1.25) translate(20px,15px);transform:scale(1.25) translate(20px,15px);-webkit-transform-origin:right bottom;transform-origin:right bottom}}
+ /* ----------------------------------------------
+ * Generated by Animista on 2023-8-15 21:52:53
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes roll-in-blurred-left{0%{-webkit-transform:translateX(-1000px) rotate(-720deg);transform:translateX(-1000px) rotate(-720deg);-webkit-filter:blur(50px);filter:blur(50px);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes roll-in-blurred-left{0%{-webkit-transform:translateX(-1000px) rotate(-720deg);transform:translateX(-1000px) rotate(-720deg);-webkit-filter:blur(50px);filter:blur(50px);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
