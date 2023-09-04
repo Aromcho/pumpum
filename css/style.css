@@ -8,17 +8,14 @@ body {
     background-size: cover;
 
 }
-
-
-
-
 section {
 
     height: 20%;
 
 }
 .titulo {
-    margin-top: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
     color: rgb(224, 200, 178);
     font-family: 'Dancing Script', cursive;
@@ -47,6 +44,10 @@ main {
     -webkit-animation:roll-in-blurred-left .65s cubic-bezier(.23,1.000,.32,1.000) both;animation:roll-in-blurred-left .65s  cubic-bezier(.23,1.000,.32,1.000) both;
     margin: 10px;
     width: 400px;
+
+}
+.card-title {
+    
 }
 .card-img-top { 
     border-radius: 30px 30px 0 0;
@@ -74,11 +75,30 @@ main {
     border-radius: 30px;
 
 }
+.btn-primary {
+    width: 100%;
+    background-color: rgb(136, 76, 34);
+    border: 1px solid black;
+    
+}
+.btn-primary:hover {
+    background-color: blanchedalmond;
+    color:rgb(136, 76, 34) ;
+    border: 1px solid black;
+}
+/*menu*/
+.portada-menu {
+    background-color: rgba(136, 76, 34, 0.74);
+    font-family: 'Dancing Script', cursive;
+    color:  blanchedalmond;
+    border-radius: 10px;
+}
+/* sucursales*/
 .sucursales {
     padding: 20px;
     grid-area: c5;
 }
-/* sucursales*/
+
 .sucu {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -104,7 +124,7 @@ main {
     text-align: center;
     color: rgb(224, 200, 178);
     font-family: 'Dancing Script', cursive;
-    -webkit-text-stroke: 1px rgb(58, 39, 22);
+    -webkit-text-stroke: 1px saddlebrown;
     font-size: 70px;
     font-weight:bolder;
     grid-area: s1;
